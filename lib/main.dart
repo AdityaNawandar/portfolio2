@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Portfolio',
+        title: 'Aditya Nawandar',
         theme: themeProvider.themeData,
         // home: const TestScreen(),
         home: HomePageScreen(),
