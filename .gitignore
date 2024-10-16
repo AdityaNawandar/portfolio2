@@ -42,6 +42,8 @@ migrate_working_dir/
 /ios/Flutter/Flutter.podspec
 /ios/Runner/GeneratedPluginRegistrant.*
 
+
+
 # Windows build folders
 /windows/runner
 /windows/flutter/ephemeral
@@ -57,3 +59,6 @@ migrate_working_dir/
 # Symbolication and Obfuscation
 app.*.symbols
 app.*.map.json
+
+# Mac OS related
+.DS_Store
