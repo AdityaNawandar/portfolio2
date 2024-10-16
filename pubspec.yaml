@@ -72,18 +72,17 @@ flutter:
     - assets/images/eComm/  
     - assets/images/animated_auth_screens/   
     - assets/images/choose_your_own_adventure/  
-    # - assets/images/tech_logos
     - assets/images/tech_logos/dotnet.svg
     - assets/images/tech_logos/dotnetcore.svg
     - assets/images/tech_logos/csharp.svg
-    - assets/images/tech_logos/flutter.svg    
+    - assets/images/tech_logos/flutter.svg      
     - assets/images/tech_logos/dart.svg
     - assets/images/tech_logos/javascript.svg
     - assets/images/tech_logos/azure.svg    
     - assets/images/tech_logos/firebase.svg
     - assets/images/tech_logos/sqlserver.svg
     - assets/images/tech_logos/git.svg
-    - assets/files/aditya_nawandar.pdf
+    - assets/files/aditya_nawandar.pdf 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
