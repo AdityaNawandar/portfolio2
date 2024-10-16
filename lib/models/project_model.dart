@@ -10,6 +10,7 @@ class ProjectModel {
   final Color titleColor;
   final Color bgColor1;
   final Color bgColor2;
+  final List<String> technologies;
 
   ProjectModel({
     required this.projectName,
@@ -21,5 +22,6 @@ class ProjectModel {
     required this.titleColor,
     required this.bgColor1,
     required this.bgColor2,
+    required this.technologies,
   });
 }

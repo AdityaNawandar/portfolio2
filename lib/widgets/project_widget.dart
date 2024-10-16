@@ -63,7 +63,7 @@ class ProjectWidget extends StatelessWidget {
       //PROJECT TITLE
       Column(
           //
-          crossAxisAlignment: CrossAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               project.projectName,
@@ -93,6 +93,38 @@ class ProjectWidget extends StatelessWidget {
                 ),
               ),
             ),
+            //TECHNOLOGIES
+            Wrap(
+              alignment: WrapAlignment.start,
+              children: [
+                ...project.technologies
+                    .map(
+                      (tech) => Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Chip(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 15.0, vertical: 10),
+                          label: Text(
+                            tech,
+                            style: TextStyle(
+                              fontSize: getFontSize(context, 28),
+                              color: !themeProvider.isDarkMode
+                                  ? kAppWhite
+                                  : kAppBlack,
+                            ),
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                          backgroundColor:
+                              !themeProvider.isDarkMode ? kAppBlack : kAppWhite,
+                        ),
+                      ),
+                    )
+                    .toList(),
+              ],
+            ),
+            SizedBox(height: 20),
             //BADGES
             Container(
               height: 75,

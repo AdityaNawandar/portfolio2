@@ -71,6 +71,7 @@ flutter:
     - assets/images/3d_demo/
     - assets/images/eComm/  
     - assets/images/animated_auth_screens/   
+    - assets/images/choose_your_own_adventure/  
     # - assets/images/tech_logos
     - assets/images/tech_logos/dotnet.svg
     - assets/images/tech_logos/dotnetcore.svg
