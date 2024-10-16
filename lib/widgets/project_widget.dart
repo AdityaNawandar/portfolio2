@@ -126,29 +126,29 @@ class ProjectWidget extends StatelessWidget {
             ),
             SizedBox(height: 20),
             //BADGES
-            Container(
-              height: 75,
-              child: Row(children: [
-                if (project.playStoreLink != null)
-                  GestureDetector(
-                    // onTap: () => launch(project.playStoreLink!),
-                    child: Image.asset(
-                      kPlayStoreBadgeImage,
-                      height: 75,
-                    ),
-                  ),
-                if (project.appStoreLink != null)
-                  GestureDetector(
-                    onTap: () {
-                      // launch(project.appStoreLink!);
-                    },
-                    child: SvgPicture.asset(
-                      kAppStoreBadgeImage,
-                      height: 50,
-                    ),
-                  ),
-              ]),
-            ),
+            // Container(
+            //   height: 75,
+            //   child: Row(children: [
+            //     if (project.playStoreLink != null)
+            //       GestureDetector(
+            //         // onTap: () => launch(project.playStoreLink!),
+            //         child: Image.asset(
+            //           kPlayStoreBadgeImage,
+            //           height: 75,
+            //         ),
+            //       ),
+            //     if (project.appStoreLink != null)
+            //       GestureDetector(
+            //         onTap: () {
+            //           // launch(project.appStoreLink!);
+            //         },
+            //         child: SvgPicture.asset(
+            //           kAppStoreBadgeImage,
+            //           height: 50,
+            //         ),
+            //       ),
+            //   ]),
+            // ),
           ]),
     ];
 
