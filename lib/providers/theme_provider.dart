@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../theme/theme.dart'; // Import your theme definitions
+import '../theme/theme.dart';
 
 class ThemeProvider with ChangeNotifier {
   bool isDarkMode = false; // Default to light theme
