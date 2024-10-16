@@ -31,11 +31,6 @@ final darkTheme = ThemeData(
     backgroundColor: Colors.transparent,
     elevation: 0,
   ),
-  // textButtonTheme: TextButtonThemeData(
-  //   style: TextButton.styleFrom(
-  //     backgroundColor: Colors.white, // Default color for text buttons
-  //   ),
-  // ),
   textTheme: const TextTheme(
     bodyLarge: TextStyle(color: Colors.white), // Text color for dark theme
     bodyMedium: TextStyle(color: Colors.white),
