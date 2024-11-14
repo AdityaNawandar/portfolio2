@@ -110,7 +110,7 @@ class HomePageScreen extends StatelessWidget {
           StandardOutlinedButton(
             buttonText: "Download Resume",
             onPressed: () => FileDownloader.downloadFileToUserComputer(),
-          )
+          ),
         ]),
       ),
     );

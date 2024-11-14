@@ -39,6 +39,7 @@ dependencies:
   flutter_svg: ^2.0.10+1
   animated_text_kit: ^4.2.2
   file_selector: ^1.0.3
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
@@ -82,7 +83,7 @@ flutter:
     - assets/images/tech_logos/firebase.svg
     - assets/images/tech_logos/sqlserver.svg
     - assets/images/tech_logos/git.svg
-    - assets/files/aditya_nawandar.pdf 
+    - assets/files/resume_aditya_nawandar.pdf 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

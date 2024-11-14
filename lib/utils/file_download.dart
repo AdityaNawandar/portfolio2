@@ -9,9 +9,11 @@ class FileDownloader {
 
     // Detect platform and adjust the path accordingly
     if (kIsWeb) {
-      assetPath = 'files/aditya_nawandar.pdf'; // Web doesn't need 'assets/'
+      assetPath =
+          'files/resume_aditya_nawandar.pdf'; // Web doesn't need 'assets/'
     } else {
-      assetPath = 'assets/files/aditya_nawandar.pdf'; // Mobile needs 'assets/'
+      assetPath =
+          'assets/files/resume_aditya_nawandar.pdf'; // Mobile needs 'assets/'
     }
 
     const String mimeType = 'application/pdf';
@@ -21,7 +23,7 @@ class FileDownloader {
 
     // Ask the user for a location to save the file
     final FileSaveLocation? result =
-        await getSaveLocation(suggestedName: 'aditya_nawandar.pdf');
+        await getSaveLocation(suggestedName: 'resume_aditya_nawandar.pdf');
     if (result == null) {
       // User canceled the operation
       return;
@@ -31,7 +33,7 @@ class FileDownloader {
     final XFile pdfFile = XFile.fromData(
       fileData,
       mimeType: mimeType,
-      name: 'aditya_nawandar.pdf',
+      name: 'resume_aditya_nawandar.pdf',
     );
 
     // Save the file to the chosen path

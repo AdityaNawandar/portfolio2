@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio/constants/constants.dart';
+import 'package:portfolio/providers/about_me_provider.dart';
+import 'package:portfolio/providers/theme_provider.dart';
 import 'package:portfolio/utils/responsive_layout.dart';
+import 'package:portfolio/utils/size_config.dart';
+import 'package:portfolio/widgets/common_scaffold.dart';
+import 'package:portfolio/widgets/standard_outlined_button.dart';
 import 'package:provider/provider.dart';
-import '../constants/constants.dart';
-import '../providers/about_me_provider.dart';
-import '../providers/theme_provider.dart';
-import '../utils/size_config.dart';
-import '../widgets/common_scaffold.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:url_launcher/url_launcher.dart';
 
 ///
 
@@ -62,7 +64,7 @@ class AboutMeScreen extends StatelessWidget {
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 'Aditya Nawandar',
@@ -106,6 +108,20 @@ class AboutMeScreen extends StatelessWidget {
                   SvgPicture.asset(svgPath('git.svg'), width: 50),
                   SvgPicture.asset(svgPath('sqlserver.svg'), width: 50),
                 ],
+              ),
+              SizedBox(height: 40),
+              // Add the GitHub link button
+              StandardOutlinedButton(
+                buttonText: 'View My GitHub',
+                onPressed: () async {
+                  final githubUrl =
+                      Uri.parse('https://github.com/AdityaNawandar');
+                  if (await canLaunchUrl(githubUrl)) {
+                    launchUrl(githubUrl, webOnlyWindowName: '_blank');
+                  } else {
+                    throw 'Could not launch $githubUrl';
+                  }
+                },
               ),
             ],
           ),
