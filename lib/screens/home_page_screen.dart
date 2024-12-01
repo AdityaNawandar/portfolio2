@@ -67,51 +67,69 @@ class HomePageScreen extends StatelessWidget {
         CommonScaffold(
       bodyContent: //
           Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text.rich(
-            TextSpan(
-              text: 'Hello! \n My name is ',
-              style: TextStyle(
-                fontSize: getFontSize(context, 60),
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Signika',
-                color: !themeProvider.isDarkMode ? kAppBlack : kAppWhite,
-              ),
-              children: <TextSpan>[
+        child: //
+            Column(
+                //
+                mainAxisAlignment: MainAxisAlignment.center, //
+                children: [
+              Spacer(),
+              Text.rich(
                 TextSpan(
-                  text: 'Aditya',
+                  text: 'Hello! \n My name is ',
                   style: TextStyle(
                     fontSize: getFontSize(context, 60),
                     fontWeight: FontWeight.bold,
-                    color: kAppTealColor, // Turquoise for name
-                  ),
-                ),
-                TextSpan(
-                  text: ',',
-                  style: TextStyle(
-                    fontSize: getFontSize(context, 60),
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Signika',
                     color: !themeProvider.isDarkMode ? kAppBlack : kAppWhite,
                   ),
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: 'Aditya',
+                      style: TextStyle(
+                        fontSize: getFontSize(context, 60),
+                        fontWeight: FontWeight.bold,
+                        color: kAppTealColor, // Turquoise for name
+                      ),
+                    ),
+                    TextSpan(
+                      text: ',',
+                      style: TextStyle(
+                        fontSize: getFontSize(context, 60),
+                        fontWeight: FontWeight.bold,
+                        color:
+                            !themeProvider.isDarkMode ? kAppBlack : kAppWhite,
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-            textAlign: TextAlign.center,
-          ),
-          ResponsiveLayout.isMobile(context)
-              ? Column(
-                  children: children,
-                )
-              : Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: children,
+                textAlign: TextAlign.center,
+              ),
+              ResponsiveLayout.isMobile(context)
+                  ? Column(
+                      children: children,
+                    )
+                  : Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: children,
+                    ),
+              SizedBox(height: 40),
+              StandardOutlinedButton(
+                buttonText: "Download Resume",
+                onPressed: () => FileDownloader.downloadFileToUserComputer(),
+              ),
+              Spacer(),
+              Text(
+                ResponsiveLayout.isMobile(context)
+                    ? '© 2024 Aditya Nawandar. \n Made with Flutter, caffeine, and a pinch of curiosity. \n Feel free to take inspiration, but make it your own!'
+                    : '© 2024 Aditya Nawandar. Made with Flutter, caffeine, and a pinch of curiosity. Feel free to take inspiration, but make it your own!',
+                style: TextStyle(
+                  fontSize: getFontSize(context, 14),
+                  color: themeProvider.isDarkMode ? kAppWhite : kAppBlack,
+                  fontStyle: FontStyle.italic,
                 ),
-          SizedBox(height: 40),
-          StandardOutlinedButton(
-            buttonText: "Download Resume",
-            onPressed: () => FileDownloader.downloadFileToUserComputer(),
-          ),
-        ]),
+                textAlign: TextAlign.center,
+              ),
+            ]),
       ),
     );
   }
