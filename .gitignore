@@ -49,8 +49,8 @@ migrate_working_dir/
 /windows/flutter/ephemeral
 
 # Web build folders
-/build/web/
-.web/
+# /build/web/
+# .web/
 
 # Linux and macOS build folders
 /linux/flutter/ephemeral

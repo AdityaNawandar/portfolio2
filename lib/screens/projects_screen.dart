@@ -28,8 +28,8 @@ class ProjectsScreen extends StatelessWidget {
           shrinkWrap: true,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: ResponsiveLayout.isMobile(context) ? 1 : 2,
-            mainAxisExtent:
-                SizeConfig.screenHeight * 0.5, // Adjust height based on screen
+            // Adjust height based on screen
+            mainAxisExtent: SizeConfig.screenHeight * 0.5,
           ),
           itemBuilder: (_, index) => ProjectWidget(
             project: projects[index],

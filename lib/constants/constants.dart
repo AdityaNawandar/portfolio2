@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../utils/size_config.dart';
 
 // Reuse these colors across your app (for appBar, scaffold, thumb, etc.)
@@ -48,12 +47,13 @@ const TextStyle kMenuTextStyle = TextStyle(
   fontSize: 24, // Common font size for menu
   fontWeight: FontWeight.bold, // Bold text for menu
 );
+
 getAnimatedKeywordStyle(context) {
   return TextStyle(
     fontSize: getFontSize(context, 60),
     fontWeight: FontWeight.bold,
     fontFamily: 'Signika',
-    color: kAppTealColor, // Same color as "Aditya"
+    color: kAppTealColor,
   );
 }
 
@@ -62,6 +62,6 @@ getAnimatedKeywordStyleForEmulator(context) {
     fontSize: getFontSize(context, 25),
     fontWeight: FontWeight.bold,
     fontFamily: 'Signika',
-    color: kAppTealColor, // Same color as "Aditya"
+    color: kAppTealColor,
   );
 }

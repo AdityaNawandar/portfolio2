@@ -29,33 +29,34 @@ class ProjectWidget extends StatelessWidget {
           color: themeProvider.isDarkMode ? kAppWhite : kAppBlack,
           child: Padding(
             padding: const EdgeInsets.all(20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 5),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(20.0),
-                    child: Image.asset(
-                      project.imageURLs![0],
-                      height: SizeConfig.screenHeight,
-                    ),
-                  ),
-                ),
-                //SizedBox(width: 10),
-                if (project.imageURLs![1] != '')
+            child: //
+                Row(
+                    //
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 5),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20.0),
                       child: Image.asset(
-                        project.imageURLs![1],
+                        project.imageURLs![0],
                         height: SizeConfig.screenHeight,
                       ),
                     ),
                   ),
-              ],
-            ),
+                  //SizedBox(width: 10),
+                  if (project.imageURLs![1] != '')
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 5),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                          project.imageURLs![1],
+                          height: SizeConfig.screenHeight,
+                        ),
+                      ),
+                    ),
+                ]),
           ),
         ),
       ),
@@ -63,7 +64,6 @@ class ProjectWidget extends StatelessWidget {
       //PROJECT TITLE
       Column(
           //
-          // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               project.projectName,
@@ -86,7 +86,6 @@ class ProjectWidget extends StatelessWidget {
                   style: TextStyle(
                     color: !themeProvider.isDarkMode ? kAppBlack : kAppWhite,
                     fontSize: getFontSize(context, 36),
-                    // fontFamily: kAppFont2,
                     fontWeight: FontWeight.w700,
                   ),
                   textAlign: TextAlign.justify,
@@ -94,36 +93,33 @@ class ProjectWidget extends StatelessWidget {
               ),
             ),
             //TECHNOLOGIES
-            Wrap(
-              alignment: WrapAlignment.start,
-              children: [
-                ...project.technologies
-                    .map(
-                      (tech) => Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                        child: Chip(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 15.0, vertical: 10),
-                          label: Text(
-                            tech,
-                            style: TextStyle(
-                              fontSize: getFontSize(context, 28),
-                              color: !themeProvider.isDarkMode
-                                  ? kAppWhite
-                                  : kAppBlack,
-                            ),
+            Wrap(alignment: WrapAlignment.start, children: [
+              ...project.technologies
+                  .map(
+                    (tech) => Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Chip(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 15.0, vertical: 10),
+                        label: Text(
+                          tech,
+                          style: TextStyle(
+                            fontSize: getFontSize(context, 28),
+                            color: !themeProvider.isDarkMode
+                                ? kAppWhite
+                                : kAppBlack,
                           ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(50),
-                          ),
-                          backgroundColor:
-                              !themeProvider.isDarkMode ? kAppBlack : kAppWhite,
                         ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        backgroundColor:
+                            !themeProvider.isDarkMode ? kAppBlack : kAppWhite,
                       ),
-                    )
-                    .toList(),
-              ],
-            ),
+                    ),
+                  )
+                  .toList(),
+            ]),
             SizedBox(height: 20),
           ]),
     ];
