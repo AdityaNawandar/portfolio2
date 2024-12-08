@@ -5,12 +5,13 @@ import '../models/project_model.dart';
 
 class ProjectsProvider with ChangeNotifier {
   static String adjustPath(String path) {
-    if (kIsWeb) {
-      // Web doesn't need 'assets/' prefix
-      return path.replaceFirst('assets/', '');
-    } else {
-      return path;
-    }
+    return path;
+    // if (kIsWeb) {
+    //   // Web doesn't need 'assets/' prefix
+    //   return path.replaceFirst('assets/', '');
+    // } else {
+    //   return path;
+    // }
   }
 
   final List<ProjectModel> _projects = [
