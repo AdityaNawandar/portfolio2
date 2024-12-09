@@ -41,9 +41,7 @@ class AboutMeScreen extends StatelessWidget {
           child: Center(
             child: CircleAvatar(
               radius: !ResponsiveLayout.isMobile(context) ? 150 : 120,
-              backgroundImage: AssetImage(kIsWeb
-                  ? 'images/profile_pic.jpg'
-                  : 'assets/images/profile_pic.jpg'),
+              backgroundImage: AssetImage(kstrProfileImagePath),
             ),
           ),
         ),
