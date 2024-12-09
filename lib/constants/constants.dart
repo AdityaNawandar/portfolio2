@@ -68,6 +68,6 @@ getAnimatedKeywordStyleForEmulator(context) {
 }
 
 /// IMAGES
-const String kstrProfileImagePath = 'assets/images/profile_pic.jpg';
+const String kstrProfileImagePath = 'assets/images/';
 const String kstrTechnologyLogoSvgDirectorysPath = 'assets/images/tech_logos/';
 const String kstrProjectThumbnailImageDirectoryPath = 'assets/images/';
