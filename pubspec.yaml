@@ -99,6 +99,7 @@ flutter:
     - assets/images/tech_logos/git.svg
     - assets/files/resume_aditya_nawandar.pdf 
     - assets/icon/icon.png
+    - assets/images/profile_pic.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
