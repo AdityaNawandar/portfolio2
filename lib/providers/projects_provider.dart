@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../constants/constants.dart';
 import '../models/project_model.dart';
@@ -6,12 +5,6 @@ import '../models/project_model.dart';
 class ProjectsProvider with ChangeNotifier {
   static String adjustPath(String path) {
     return path;
-    // if (kIsWeb) {
-    //   // Web doesn't need 'assets/' prefix
-    //   return path.replaceFirst('assets/', '');
-    // } else {
-    //   return path;
-    // }
   }
 
   final List<ProjectModel> _projects = [
@@ -21,10 +14,8 @@ class ProjectsProvider with ChangeNotifier {
       projectDescription:
           'A workout logging app for tracking daily gym activities. Features include Firebase Phone Authentication, Google Sign-In, and Apple Sign-In for iOS, ensuring secure user access.',
       imageURLs: [
-        ProjectsProvider.adjustPath(
-            'assets/images/workout_tracker/SWT_ss1.png'),
-        ProjectsProvider.adjustPath(
-            'assets/images/workout_tracker/SWT_ss2.png'),
+        '${kstrProjectThumbnailImageDirectoryPath}workout_tracker/SWT_ss1.png',
+        '${kstrProjectThumbnailImageDirectoryPath}workout_tracker/SWT_ss2.png',
       ],
       playStoreLink:
           'https://play.google.com/store/apps/details?id=com.shaakuntalapps.workouttracker',
@@ -41,8 +32,8 @@ class ProjectsProvider with ChangeNotifier {
       projectDescription:
           'A sleek sound recording app with advanced UI, animations, and file system interaction. Handles permissions and audio storage on Android/iOS.',
       imageURLs: [
-        ProjectsProvider.adjustPath('assets/images/sound_recorder/SR_ss1.gif'),
-        ProjectsProvider.adjustPath('assets/images/sound_recorder/SR_ss2.png'),
+        '${kstrProjectThumbnailImageDirectoryPath}sound_recorder/SR_ss1.gif',
+        '${kstrProjectThumbnailImageDirectoryPath}sound_recorder/SR_ss2.png',
       ],
       playStoreLink: null,
       appStoreLink: null,
@@ -57,8 +48,8 @@ class ProjectsProvider with ChangeNotifier {
       projectDescription:
           'A nutrition analysis app fetching data from APIs. Implements nested JSON parsing to provide detailed nutritional information.',
       imageURLs: [
-        ProjectsProvider.adjustPath('assets/images/food_nutrition/FN_ss1.png'),
-        ProjectsProvider.adjustPath('assets/images/food_nutrition/FN_ss2.png'),
+        '${kstrProjectThumbnailImageDirectoryPath}food_nutrition/FN_ss1.png',
+        '${kstrProjectThumbnailImageDirectoryPath}food_nutrition/FN_ss2.png',
       ],
       playStoreLink: null,
       appStoreLink: null,
@@ -73,8 +64,8 @@ class ProjectsProvider with ChangeNotifier {
       projectDescription:
           'A complete e-commerce solution, utilizing multiprovider state management and implementing complex app architecture',
       imageURLs: [
-        ProjectsProvider.adjustPath('assets/images/eComm/eC_ss1.png'),
-        ProjectsProvider.adjustPath('assets/images/eComm/eC_ss2.png'),
+        '${kstrProjectThumbnailImageDirectoryPath}eComm/eC_ss1.png',
+        '${kstrProjectThumbnailImageDirectoryPath}eComm/eC_ss2.png',
       ],
       playStoreLink: null,
       appStoreLink: null,
@@ -89,8 +80,8 @@ class ProjectsProvider with ChangeNotifier {
       projectDescription:
           'A 3D object rendering app in Flutter, tackling challenges like rotating shadows and interactive models.',
       imageURLs: [
-        ProjectsProvider.adjustPath('assets/images/3d_demo/3D_ss1.gif'),
-        ProjectsProvider.adjustPath('assets/images/3d_demo/3D_ss1.gif'),
+        '${kstrProjectThumbnailImageDirectoryPath}3d_demo/3D_ss1.gif',
+        '${kstrProjectThumbnailImageDirectoryPath}3d_demo/3D_ss1.gif',
       ],
       playStoreLink: null,
       appStoreLink: null,
@@ -105,10 +96,8 @@ class ProjectsProvider with ChangeNotifier {
       projectDescription:
           'A visually appealing, tutorial-based animated authentication UI that enhances user experience.',
       imageURLs: [
-        ProjectsProvider.adjustPath(
-            'assets/images/animated_auth_screens/AAS_ss.gif'),
-        ProjectsProvider.adjustPath(
-            'assets/images/animated_auth_screens/ALS_ss.gif'),
+        '${kstrProjectThumbnailImageDirectoryPath}animated_auth_screens/AAS_ss.gif',
+        '${kstrProjectThumbnailImageDirectoryPath}animated_auth_screens/ALS_ss.gif',
       ],
       playStoreLink: null,
       appStoreLink: null,
@@ -123,10 +112,8 @@ class ProjectsProvider with ChangeNotifier {
       projectDescription:
           'An interactive storytelling app enhanced by OpenAI, allowing users to navigate through a series of choices and outcomes. This app uses AI-driven narrative branching and decision-based logic, providing an immersive adventure experience. While the UI is minimal, the app focuses on offering a flexible and engaging narrative journey for users.',
       imageURLs: [
-        ProjectsProvider.adjustPath(
-            'assets/images/choose_your_own_adventure/cyoa_ss1.png'),
-        ProjectsProvider.adjustPath(
-            'assets/images/choose_your_own_adventure/cyoa_ss2.png'),
+        '${kstrProjectThumbnailImageDirectoryPath}choose_your_own_adventure/cyoa_ss1.png',
+        '${kstrProjectThumbnailImageDirectoryPath}choose_your_own_adventure/cyoa_ss2.png',
       ],
       playStoreLink: null,
       appStoreLink: null,

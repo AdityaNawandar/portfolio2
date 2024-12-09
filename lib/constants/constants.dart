@@ -48,6 +48,7 @@ const TextStyle kMenuTextStyle = TextStyle(
   fontWeight: FontWeight.bold, // Bold text for menu
 );
 
+///
 getAnimatedKeywordStyle(context) {
   return TextStyle(
     fontSize: getFontSize(context, 60),
@@ -65,3 +66,8 @@ getAnimatedKeywordStyleForEmulator(context) {
     color: kAppTealColor,
   );
 }
+
+/// IMAGES
+const String kstrProfileImagePath = 'assets/images/profile_pic.jpg';
+const String kstrTechnologyLogoSvgDirectorysPath = 'assets/images/tech_logos/';
+const String kstrProjectThumbnailImageDirectoryPath = 'assets/images/';

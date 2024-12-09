@@ -152,9 +152,7 @@ class AboutMeScreen extends StatelessWidget {
   }
 
   String svgPath(String fileName) {
-    return kIsWeb
-        ? 'images/tech_logos/$fileName'
-        : 'assets/images/tech_logos/$fileName';
+    return '$kstrTechnologyLogoSvgDirectorysPath$fileName';
   }
 
   ///
