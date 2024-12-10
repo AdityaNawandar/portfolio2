@@ -71,4 +71,4 @@ getAnimatedKeywordStyleForEmulator(context) {
 const String kstrProfileImagePath = 'assets/images/';
 const String kstrTechnologyLogoSvgDirectorysPath = 'assets/images/tech_logos/';
 const String kstrProjectThumbnailImageDirectoryPath = 'assets/images/';
-const String kstrResumeFileDirectoryPath = 'assets/assets/files/';
+const String kstrResumeFileDirectoryPath = 'assets/files/';
