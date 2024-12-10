@@ -23018,7 +23018,7 @@ v3(){var s=0,r=A.T(t.H),q,p,o,n,m,l,k
 var $async$v3=A.U(function(a,b){if(a===1)return A.Q(b,r)
 while(true)switch(s){case 0:k=A
 s=3
-return A.X($.CU().hQ("assets/assets/files/resume_aditya_nawandar.pdf"),$async$v3)
+return A.X($.CU().hQ("assets/files/resume_aditya_nawandar.pdf"),$async$v3)
 case 3:m=k.cy(b.buffer,0,null)
 s=4
 return A.X(A.ak5("resume_aditya_nawandar.pdf"),$async$v3)
