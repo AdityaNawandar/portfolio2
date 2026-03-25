@@ -97,7 +97,10 @@ flutter:
     - assets/images/tech_logos/firebase.svg
     - assets/images/tech_logos/sqlserver.svg
     - assets/images/tech_logos/git.svg
-    - assets/files/resume_aditya_nawandar.pdf 
+    - assets/images/tech_logos/flutterflow.svg
+    - assets/images/tech_logos/postgresql.svg
+    - assets/images/tech_logos/nodejs.svg
+    - assets/files/resume_aditya_nawandar.pdf
     - assets/icon/icon.png
     - assets/images/profile_pic.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
