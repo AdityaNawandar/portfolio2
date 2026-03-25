@@ -34,7 +34,7 @@ class ContactMeScreen extends StatelessWidget {
               ),
               SizedBox(height: 10),
               Text(
-                'Email: adityanawandar@gmail.com',
+                'Email: nawandaraditya60@gmail.com',
                 style: TextStyle(fontSize: getFontSize(context, 20)),
                 textAlign: TextAlign.justify,
               ),
